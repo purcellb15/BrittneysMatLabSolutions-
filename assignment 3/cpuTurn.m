@@ -41,8 +41,9 @@ cpu= randsample(possMoves,1);
             board(5,10)='o'
             display(board)
     end
+    
         display(board)
-usedMoves= [usedMoves, cpu]
+usedMoves= [usedMoves, cpu];
 possMoves= setdiff(moves, usedMoves); 
 end
 

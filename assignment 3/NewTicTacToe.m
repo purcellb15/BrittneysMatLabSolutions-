@@ -88,9 +88,7 @@ end
  % player moved first this section of the code starts with the computer and
  % then continues with the player on a loop
    for i= 1:4
-       if possMoves== 0
-   display('TIE!!')
-       end
+       
        % this is where the cpuTurn function is called and uses the
        % usedMoves and possMoves.  It inputs those values and returns the
        % updated outputs
@@ -161,19 +159,17 @@ end
 
    end
    
-   if sum(possMoves) == 0
+   if i==5
     display ('TIE')
 end
-   
+   % this section of the code asks the player if they would like to play
+   % the game again
 promptMessage = sprintf('Do you want to play again?');
 button = questdlg(promptMessage, 'Yes', 'No');
 
 
 end
 
-%  if strcmpi(button, 'no')
-%     display('oh, okay then')
-% end
-% if strcmpi(button, 'cancel')
-%     display('oh, okay then')
-% end
+ if strcmpi(button, 'no')
+    display('oh, okay then')
+end

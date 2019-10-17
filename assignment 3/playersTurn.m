@@ -43,8 +43,9 @@ switch player
             display(board)
         
 end
+
 display(board)
-usedMoves= [usedMoves, player]
+usedMoves= [usedMoves, player];
 possMoves= setdiff(moves, usedMoves);    
 end
 
